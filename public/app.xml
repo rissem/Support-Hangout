@@ -7,6 +7,8 @@
   <Content type="html">
     <![CDATA[
       <script src="//hangoutsapi.appspot.com/static/hangout.js"></script>
+      <script src="//supporthangout.heroku.com/javascripts/main.js"></script>
+      <script src="http://localhost:3000/javascripts/scratch.js"></script>
       <!-- Your application code -->
     ]]>
   </Content>
