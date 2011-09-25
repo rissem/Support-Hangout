@@ -1,4 +1,4 @@
-var currentSpeaker = undefined
+/*
 
 function getChairman() {
     return gapi.hangout.data.getState().chairman;
@@ -58,9 +58,13 @@ window.setTimeout(function() {
 
 window.setInterval(function() {
     $("#shareButton").click(function() {
+        console.log("making me speaker");
         makeMeSpeaker();
     });
     $("#stopSharingButton").click(function() {
+        console.log("making chairman speaker");        
         makeChairmanSpeaker();
     });
 }, 2000);
+
+*/
