@@ -65,3 +65,7 @@ window.setTimeout(function() {
     });
 
 }, 2000);
+
+window.setInterval(function() {
+    activatePerson(getSpeaker());
+}, 500);
