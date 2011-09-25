@@ -13,9 +13,8 @@
 		<script type="text/javascript">
 			$.ready(function(){
 				$.ajax({
-				  url: ,'//supporthangout.heroku.com/plugin.html',
-				  data: data,
-				  success: function(){
+				  url: '//supporthangout.heroku.com/plugin.html',
+				  success: function(data){
 					$('body_area').html(data);
 				  }
 				});
