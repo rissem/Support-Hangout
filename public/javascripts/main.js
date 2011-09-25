@@ -48,24 +48,6 @@ gapi.hangout.addAppParticipantAddedListener(function(participants) {
     setChairman();
 });
 
-window.setTimeout(function() {
-    if (getSpeaker() == undefined) {
-        makeChairmanSpeaker();
-    }
-
-    $("#shareButton").click(function() {
-        console.log("making me speaker");
-        makeMeSpeaker();
-        activatePerson(getSpeaker());
-    });
-    $("#stopSharingButton").click(function() {
-        console.log("making chairman speaker");        
-        makeChairmanSpeaker();
-        activatePerson(getSpeaker());
-    });
-
-}, 2000);
-
 window.setInterval(function() {
     activatePerson(getSpeaker());
 }, 500);
