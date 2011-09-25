@@ -1,9 +1,66 @@
-function doStuff() {
-    console.log("do stuff");
+var currentSpeaker = undefined
+
+function getChairman() {
+    return gapi.hangout.data.getState().chairman;
 }
 
-gapi.hangout.addApiReadyListener(startMyApp);
-
-function startMyApp(){
-	console.log("This worked");
+function getSpeaker() {
+    return gapi.hangout.data.getState().speaker;
 }
+
+function makeChairmanSpeaker() {
+    gapi.hangout.data.submitDelta({speaker:getChairman()});    
+}
+
+function startMeeting() {
+    setChairman();
+    showIntroDocs();
+}
+
+function showIntroDocs() {
+    
+}
+
+function makeMeSpeaker() {
+    gapi.hangout.data.submitDelta({speaker: gapi.hangout.getParticipantId()});
+}
+
+function setChairman() {
+    var participants = gapi.hangout.getParticipants();
+    console.log("ok");
+    for (var i=0; i < participants.length; i++) {
+        if (participants[i].displayName == "Michael Risse") {
+            chairman = participants[i].hangoutId;
+            gapi.hangout.data.submitDelta({chairman:chairman});
+        }
+    }
+    activatePerson(getChairman());
+}
+
+function activatePerson(hangoutId) {
+    gapi.hangout.layout.setParticipantHighlight(hangoutId);
+    gapi.hangout.setActiveSpeaker(hangoutId);
+}
+
+gapi.hangout.addParticipantAddedListener(function() {
+    setChairman();
+});
+
+gapi.hangout.addAppParticipantAddedListener(function(participants) {
+    setChairman();
+});
+
+window.setTimeout(function() {
+    if (getSpeaker() == undefined) {
+        makeChairmanSpeaker();
+    }
+}, 2000);
+
+window.setInterval(function() {
+    $("#shareButton").click(function() {
+        makeMeSpeaker();
+    });
+    $("#stopSharingButton").click(function() {
+        makeChairmanSpeaker();
+    });
+}, 2000);
