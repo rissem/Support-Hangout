@@ -11,5 +11,10 @@
       <script src="http://localhost:3000/javascripts/scratch.js"></script>
       <!-- Your application code -->
     ]]>
+    <form>
+      <input type="button" id="shareButton" style="display:none" />
+      <input type="button" id="stopSharingButton" style="display:none" />
+    </form>
+    <div id="docs"></div>
   </Content>
 </Module>
