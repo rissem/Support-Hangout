@@ -10,21 +10,7 @@
       <script src="//supporthangout.heroku.com/javascripts/main.js"></script>
       <script src="//supporthangout.heroku.com/javascripts/jquery-1.6.4.min.js"></script>
       <script src="http://localhost:3000/javascripts/scratch.js"></script>
-		<script type="text/javascript">
-			$.ready(function(){
-				$.ajax({
-				  url: ,'//supporthangout.heroku.com/plugin.html',
-				  data: data,
-				  success: function(){
-					$('body_area').html(data);
-				  }
-				});
-			})
-		</script>
-
-    
-	  
-	  <div id='body_area'></div>
+      <div id='body_area'>hello</div>
     ]]>
   </Content>
 </Module>
