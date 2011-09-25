@@ -48,9 +48,9 @@ gapi.hangout.addAppParticipantAddedListener(function(participants) {
     setChairman();
 });
 
-window.setInterval(function() {
+gapi.hangout.addStateChangeListener(function() {
     activatePerson(getSpeaker());
-}, 500);
+});
 
 var preambleString = 
 '	  <input type="button" id="shareButton" value="Share"/>' + 
