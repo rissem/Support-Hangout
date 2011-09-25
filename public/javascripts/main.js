@@ -52,15 +52,16 @@ window.setTimeout(function() {
     if (getSpeaker() == undefined) {
         makeChairmanSpeaker();
     }
-}, 2000);
 
-window.setInterval(function() {
     $("#shareButton").click(function() {
         console.log("making me speaker");
         makeMeSpeaker();
+        activatePerson(getSpeaker());
     });
     $("#stopSharingButton").click(function() {
         console.log("making chairman speaker");        
         makeChairmanSpeaker();
+        activatePerson(getSpeaker());
     });
+
 }, 2000);
