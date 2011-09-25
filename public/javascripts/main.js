@@ -66,11 +66,15 @@ var preambleString =
 
 
 function appStart() {
-    console.log("??");
-    console.log($('#body_area'));
-    console.log(document.getElementById("body_area"));
-    console.log(preambleString);
     $('#body_area').html(preambleString);
+    $("#shareButton").click(function() {
+        console.log("making me speaker");
+        makeMeSpeaker();
+    });
+    $("#stopSharingButton").click(function() {
+        console.log("making chairman speaker");
+        makeChairmanSpeaker();
+    });
 }
 
 gapi.hangout.addApiReadyListener(appStart);
