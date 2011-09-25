@@ -6,9 +6,9 @@
   </ModulePrefs>
   <Content type="html">
     <![CDATA[
+      <script src="//supporthangout.heroku.com/javascripts/jquery-1.6.4.min.js"></script>
       <script src="//hangoutsapi.appspot.com/static/hangout.js"></script>
       <script src="//supporthangout.heroku.com/javascripts/main.js"></script>
-      <script src="//supporthangout.heroku.com/javascripts/jquery-1.6.4.min.js"></script>
       <script src="http://localhost:3000/javascripts/scratch.js"></script>
       <div id='body_area'>hello</div>
     ]]>

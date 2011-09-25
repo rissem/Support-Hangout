@@ -73,4 +73,4 @@ function appStart() {
     $('#body_area').html(preambleString);
 }
 
-$(document).ready(appStart);
+gapi.hangout.addApiReadyListener(appStart);
