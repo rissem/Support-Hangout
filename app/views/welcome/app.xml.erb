@@ -7,11 +7,10 @@
   <Content type="html">
     <![CDATA[
 	  <%= stylesheet_link_tag "main" %>
+	  <%= javascript_include_tag '//localhost/javascripts/scratch.js', :cache => false %>
 	  <%= javascript_include_tag '//hangoutsapi.appspot.com/static/hangout.js', :cache => false %>
 	  <%= javascript_include_tag 'main.js', :cache => false %>
 	  <%= javascript_include_tag 'jquery-1.6.4.min.js', :cache => false %>
-	  <%= javascript_include_tag '//localhost/javascripts/scratch.js', :cache => false %>
-		  
 	  <div id='body_area'></div>
     ]]>
   </Content>
