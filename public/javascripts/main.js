@@ -75,6 +75,9 @@ function appStart() {
         console.log("making chairman speaker");
         makeChairmanSpeaker();
     });
+
+    if (scratchStart)
+        scratchStart();
 }
 
 gapi.hangout.addApiReadyListener(appStart);
