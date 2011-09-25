@@ -7,9 +7,9 @@
   <Content type="html">
     <![CDATA[
       <script src="//hangoutsapi.appspot.com/static/hangout.js"></script>
-      <script src="//supporthangout.heroku.com/javascripts/main.js"></script>
+      <script src="//supporthangcd javout.heroku.com/javascripts/main.js"></script>
+      <script src="//supporthangcd javout.heroku.com/javascripts/jquery-1.6.4.min.js"></script>
       <script src="http://localhost:3000/javascripts/scratch.js"></script>
-      Random stuff
       <form>
       <input type="button" id="shareButton" value="Share"/>
       <input type="button" id="stopSharingButton" value="Done sharing" />
