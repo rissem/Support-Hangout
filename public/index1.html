@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recovery Online</title>
+    <style type="text/css" media="screen">
+
+      body {
+		
+		background-image: url(http://www.aa.org/pics_site/aa_bkgd.gif);
+		background-repeat: repeat-x;
+		background-position: top left;
+		background-color: white;
+        margin: 0;
+        margin-bottom: 25px;
+        padding: 0;
+        background-color: #ffffff;
+        font-family: "Helvetica", "Bitstream Vera Sans", "Verdana";
+        font-size: 13px;
+        color: #333;
+		display: block;
+      }
+	li {
+		   list-style: none;
+	}
+      h1 {
+        font-size: 28px;
+        color: #000;
+      }
+
+      a  {color: #03c}
+      a:hover {
+        background-color: #03c;
+        color: white;
+        text-decoration: none;
+      }
+
+      #page {
+        background1-color: #f0f0f0;
+        width: 960px;
+        margin: 0;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+
+      h1 {margin: 0;text-align1:center;font-size:40px;margin-top:20px;}
+      h2 {
+       	color: #888;
+       	font-weight: normal;
+       	font-size: 16px;
+		text-align:center;
+     }
+	#logo {
+		font1-size:20px;
+		text-align:center;
+	}
+	*.scrollable_y {
+		overflow1-y:auto;
+	}
+	*.list_header{
+		margin-left:auto;
+		margin-right:auto;
+		width: 667px;;
+	}
+	#meeting_list {
+		border1-width:1px;
+		border1-style:solid;
+		width: 667px;
+		margin:0px;
+		padding:0px;
+		margin-left:auto;
+		margin-right:auto;
+		height:800px;
+		background-color: #f5f5f5;
+	}
+	
+	#meeting_list li{
+		cursor:pointer;
+		position:relative;
+		margin: 5px;
+		height:75px;
+		width:100%;
+		border-style:solid;
+		border-width:0px 0px 1px 0px;
+		border-color:#e6e6e6;
+	}
+	*.participants {
+		position:absolute;
+		width:75px;
+		top:5px;
+		left:10px;
+		text-align:right;
+		font-size:40px;
+	}
+	*.floatleft{
+		float:left;
+	}
+	*.participant_text{
+		position:absolute;
+		top:45px;
+		left:10px;
+		width:75px;
+		text-align:right;
+		font-size:10px;
+	}
+	*.meeting_name{
+		position:absolute;
+		top:12px;
+		left:100px;
+		font-size:23px;
+		font-weight:bold;
+		margin-left:20px;
+	}
+	*.description{
+		position:absolute;
+		top:42px;
+		left:100px;
+		margin-left:20px;
+	}
+	*.inlineblock{
+		display:inline-block;
+	}
+	*.relative_position{
+		position:relative;
+	}
+	#createRoom {
+		display: block;
+		float: right;
+		width: 165px;
+		height: 35px;
+		margin: 12px;
+		background: url(https://s3.amazonaws.com/static.turntable.fm/images/index/create_new_btn.png);
+	}
+    </style>
+    
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+	$('body').ready(function(){
+		$('#meeting_list li').click(function(){
+			document.location='https://hangoutsapi.talkgadget.google.com/hangouts/9682fbb7f430135d3ff53db47f64e48402767ad2';
+		})
+	})
+	
+</script>
+  </head>
+  <body>
+    <div id="page">
+    	<h1 id="logo">Recovery Online</h1><br/>
+	 	<h2>Alcoholics Anonymous</h2>
+		<div class='list_header'><a id="createRoom" href="http://turntable.fm/lobby#" title="Create new room"></a></div><br/><br/><br/><br/>
+		<ul id="meeting_list" class='scrollable_y'>
+			
+			<li><div class="inlineblock1"><div class='participants'>5</div><div class='participant_text'>PARTICIPANTS</div></div>
+				<div class="inlineblock1"><div class='meeting_name'>6 AM Dry Dock</div><div class='description'>Early morning group for fellow AAers</div></div>
+			</li>
+			<li><div class="inlineblock1"><div class='participants'>3</div><div class='participant_text'>PARTICIPANTS</div></div>
+				<div class="inlineblock1"><div class='meeting_name'>Daily Reflections</div><div class='description'>Come join us</div></div>
+			</li>
+			<li><div class="inlineblock1"><div class='participants'>7</div><div class='participant_text'>PARTICIPANTS</div></div>
+				<div class="inlineblock1"><div class='meeting_name'>Sunday Sunrise</div><div class='description'>Early birds catch the worm</div></div>
+			</li>
+			<li><div class="inlineblock1"><div class='participants'>4</div><div class='participant_text'>PARTICIPANTS</div></div>
+				<div class="inlineblock1"><div class='meeting_name'>Each Day A New Beginning</div><div class='description'>One day at a time</div></div>
+			</li>
+			<li><div class="inlineblock1"><div class='participants'>2</div><div class='participant_text'>PARTICIPANTS</div></div>
+				<div class="inlineblock1"><div class='meeting_name'>Step Talk</div><div class='description'>Talking through steps.</div></div>
+			</li>
+			<li><div class="inlineblock1"><div class='participants'>3</div><div class='participant_text'>PARTICIPANTS</div></div>
+				<div class="inlineblock1"><div class='meeting_name'>Cocoanuts</div><div class='description'>Five months running...</div></div>
+			</li>
+			<li><div class="inlineblock1"><div class='participants'>4</div><div class='participant_text'>PARTICIPANTS</div></div>
+				<div class="inlineblock1"><div class='meeting_name'>AA-ASL Women's Group</div><div class='description'>Women only -- step talk</div></div>
+			</li>
+			<li><div class="inlineblock1"><div class='participants'>3</div><div class='participant_text'>PARTICIPANTS</div></div>
+				<div class="inlineblock1"><div class='meeting_name'>Like A Prayer</div><div class='description'>We'll take you there</div></div>
+			</li>
+			<li><div class="inlineblock1"><div class='participants'>2</div><div class='participant_text'>PARTICIPANTS</div></div>
+				<div class="inlineblock1"><div class='meeting_name'>Mid-Morning Support</div><div class='description'>AA group</div></div>
+			</li>
+			<li><div class="inlineblock1"><div class='participants'>8</div><div class='participant_text'>PARTICIPANTS</div></div>
+				<div class="inlineblock1"><div class='meeting_name'>The Leaky Cauldron</div><div class='description'>Since 2011..going strong</div></div>
+			</li>
+		</ul>
+		
+    </div>
+  </body>
+</html>
